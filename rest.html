@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    /** Rest Operator in JavaScript using Arrays**/
+    const color = ["Red", "Green", "Blue", "Yellow", "Purple"];
+
+    const[firstColor, secondColor, ...otherColors] = color;
+    console.log(firstColor);
+    console.log(secondColor);
+    console.log(otherColors);
+
+    /** Rest Operator in JavaScript using Objects**/
+
+    const colors ={
+        first: "Red",
+        second: "Green",
+        third: "Blue",
+        fourth: "Yellow",
+        fifth: "Purple",
+
+    };
+    const {first, second, ...restColors} = colors;
+    console.log(first);
+    console.log(second);
+    console.log(restColors);
+
+
+
+</script>
+</html>

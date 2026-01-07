@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /** Spread Operator in JavaScript using Arrays**/
+    const numbers = [1, 2, 3, 4, 5];
+    const newNumbers = [6, 7, 8];
+    const combinedNumbers = [...numbers, ...newNumbers];
+    console.log(combinedNumbers);
+
+    /** Spread Operator in JavaScript using Objects**/
+
+    const person = {
+        name: "John",
+        age: 30,
+        city: "New York"
+    };
+
+    const newPerson = {
+        country: "USA",
+        occupation: "Engineer"
+    };
+    const mergedPerson = {...person, ...newPerson};
+
+    console.log(mergedPerson);
+</script>
+</html>
